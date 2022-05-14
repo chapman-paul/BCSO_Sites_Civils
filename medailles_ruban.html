@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="medailles_rubans.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
+    <script src="https://kit.fontawesome.com/c6c4aaaf12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Medailles et Rubans </title>
+</head>
+
+<body>
+    <header>
+        <img src="base_de_données/Logo_BCSO.png" alt="logo">
+        <div class="menu-bar">
+                <ul>
+                        <li><a href="documents.html">Accueil</a><i
+                                        class="fa-solid fa-building-shield"></i></li>
+                        <li><a href="https://discord.gg/ecxHRF4abG" target="_blank">Intranet Discord</a><i
+                                        class="fa-solid fa-clipboard-check"></i>
+                        </li>
+                        <li><a href="#">Agents</a><i class="fa-solid fa-handcuffs"></i>
+                                <div class="sub-menu-1">
+                                        <ul>
+                                                <li class="hover-me"><a href="#"><i
+                                                                        class="fa-solid fa-hat-cowboy"></i>
+                                                                Etat Major</a><i
+                                                                class="fa-solid fa-ellipsis-vertical"></i>
+                                                        <div class="sub-menu-2">
+                                                                <ul>
+                                                                        <li><a href="#"><i
+                                                                                                class="fa-solid fa-person-military-rifle"></i>Sheriff</a>
+                                                                        </li>
+                                                                        <li><a href="UnderSheriff.html"><i
+                                                                                                class="fa-solid fa-person-military-rifle"></i>UnderSheriff</a>
+                                                                        </li>
+                                                                        <li><a href="Assistant_Sheriff.html"><i
+                                                                                                class="fa-solid fa-person-military-rifle"></i>Assistant
+                                                                                        Sheriff</a></li>
+                                                                </ul>
+                                                        </div>
+
+                                                </li>
+                                        </ul>
+                                </div>
+
+                        </li>
+                        <li class="active"><a href="#">Documents</a><i class="fa-solid fa-folder-open"></i>
+                                <div class="sub-menu-1">
+                                        <ul>
+                                                <li><a href="https://docs.google.com/document/d/1rCtq8FoTB354i20qm_aoGsh3YsEnC__-jyOo5jm2Fm8/edit">Guide
+                                                                des Defcons</a></li>
+                                                <li><a href="defcons.html">Defcons Actuel</a></li>
+                                                <li><a href="https://docs.google.com/document/d/1Jw5y5jexcFTrtDd_I9BpTsLtSfxUloGI27-V62rv1HU/edit?usp=sharing">Code
+                                                                Pénal</a></li>
+                                                <li><a href="https://docs.google.com/document/d/1kYxr2dX34BMIwbqLplo3giRj0vRXMU-zftH_nRVGPt8/edit">Code
+                                                                Civils</a></li>
+                                                <li><a href="medailles_ruban.html">Medailles
+                                                                et Rubans</a></li>
+                                                <li><a href="logo-bcso.html">Logo du BCSO</a></li>
+                                                <li><a href="grade_bcso.html">Grades
+                                                                BCSO</a></li>
+                                                <li><a href="droits_miranda.html">Droits Miranda</a></li>
+                                        </ul>
+                                </div>
+                        </li>
+                </ul>
+        </div>
+
+
+        <a href="index.html" class="btn-area">Connexion<i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+    </header>
+    <section>
+        <h2> Médailles et Rubans</h2>
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="diapo/medailles_1.png"></div>
+                    <div class="swiper-slide"><img src="diapo/medailles_2.png"></div>
+                    <div class="swiper-slide"><img src="diapo/medailles_3.png"></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>©️ Created for CHAPMAN Paul (Thibault Benard)</p>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
